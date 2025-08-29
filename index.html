@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER FAST CHARGING POWERBANK - Daily Mall Store</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #fff5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(to right, #8a2be2, #ff69b4);
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .hero {
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .product-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #8a2be2;
+        }
+        
+        .product-subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+        
+        .main-image {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .price-container {
+            margin: 20px 0;
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 18px;
+        }
+        
+        .discount-badge {
+            background-color: #ff4500;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        
+        .final-price {
+            font-size: 32px;
+            font-weight: 700;
+            color: #8a2be2;
+        }
+        
+        .urgency-timer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .timer-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .timer-countdown {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        .color-options {
+            margin: 30px 0;
+        }
+        
+        .color-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .color-selection {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .color-option {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        
+        .color-option:hover, .color-option.active {
+            border-color: #8a2be2;
+            transform: scale(1.1);
+        }
+        
+        .gallery {
+            margin: 40px 0;
+        }
+        
+        .gallery-title {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #8a2be2;
+        }
+        
+        .gallery-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        
+        .gallery-item {
+            flex: 0 0 auto;
+            width: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .features {
+            background-color: white;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .features-title {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #8a2be2;
+        }
+        
+        .feature-list {
+            list-style: none;
+        }
+        
+        .feature-item {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-item:before {
+            content: "✓";
+            color: #8a2be2;
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        
+        .order-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .order-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #8a2be2;
+        }
+        
+        .order-button {
+            background: linear-gradient(to right, #8a2be2, #ff69b4);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+        }
+        
+        .order-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+        }
+        
+        .guarantee {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 16px;
+            color: #666;
+        }
+        
+        footer {
+            background: linear-gradient(to right, #8a2be2, #ff69b4);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .product-title {
+                font-size: 24px;
+            }
+            
+            .final-price {
+                font-size: 28px;
+            }
+            
+            .color-option {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Daily Mall Store</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1 class="product-title">SUPER FAST CHARGING POWERBANK</h1>
+            <p class="product-subtitle">Isi ulang perangkat Anda dengan kecepatan tinggi, kapan saja dan di mana saja!</p>
+            
+            <div class="product-image">
+                <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/55531484d1dd48d39ced1057402a4f40~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=my&from=1826719393" alt="SUPER FAST CHARGING POWERBANK" class="main-image" id="mainProductImage">
+            </div>
+            
+            <div class="price-container">
+                <div class="original-price">Rp 390.000</div>
+                <div class="final-price">Rp 195.000 <span class="discount-badge">50% OFF</span></div>
+            </div>
+            
+            <div class="urgency-timer">
+                <div class="timer-title">Penawaran khusus akan berakhir dalam:</div>
+                <div class="timer-countdown" id="countdown">23:59:59</div>
+            </div>
+            
+            <div class="color-options">
+                <h3 class="color-title">Pilih Warna:</h3>
+                <div class="color-selection">
+                    <div class="color-option active" style="background-color: #8a2be2;" data-color="purple" data-image="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lvycnwj6txy6b5.webp"></div>
+                    <div class="color-option" style="background-color: #ff69b4;" data-color="pink" data-image="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lvycnwj6r4ta58.webp"></div>
+                    <div class="color-option" style="background-color: #000;" data-color="black" data-image="https://down-id.img.susercontent.com/file/id-11134207-7r98z-lvycnwj6pq8uc6.webp"></div>
+                    <div class="color-option" style="background-color: #fff; border: 1px solid #eee;" data-color="white" data-image="https://down-id.img.susercontent.com/file/id-11134207-7r98x-lvycnwj6wr322a.webp"></div>
+                </div>
+            </div>
+            
+            <div class="gallery">
+                <h3 class="gallery-title">Galeri Produk</h3>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lvycnwj7asri4c.webp" alt="Powerbank Tampak Depan">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r992-lvycnwj76l2618.webp" alt="Powerbank Tampak Samping">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98w-lvycnwj7dlwef9.webp" alt="Powerbank sedang digunakan">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_834235-CBT72928095367_112023-F.webp" alt="Powerbank dengan kabel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="features-title">Fitur Unggulan</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Kapasitas besar 20000mAh untuk pengisian daya berulang</li>
+                <li class="feature-item">Teknologi fast charging untuk pengisian ultra-cepat</li>
+                <li class="feature-item">Desain mini dan portable, mudah dibawa kemana saja</li>
+                <li class="feature-item">Dilengkapi dengan kabel built-in untuk kemudahan penggunaan</li>
+                <li class="feature-item">Kompatibel dengan semua perangkat (iPhone, Samsung, dll)</li>
+                <li class="feature-item">Perlindungan multi-sirkuit: overcharge, over-discharge, short-circuit</li>
+                <li class="feature-item">Indikator LED untuk mengetahui status pengisian daya</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="order-section">
+        <div class="container">
+            <h2 class="order-title">Dapatkan Sekarang!</h2>
+            <p>Jangan lewatkan penawaran spesial dengan diskon 50% ini</p>
+            
+            <!-- OrderOnline Embed Code -->
+            <div class="ooef">
+                <form class="orderonline-embed-form" data-username="rara" data-product-slug="super-fast-charging-powerbank" data-product-id="68b1a17eb56d6692480deb1e" id="oo-embed-form-super-fast-charging-powerbank-7288" data-origin="orderonline">
+                    <div class="ooef-loader">
+                        <style>
+                            .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                            @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                            @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                            .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                            .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                            .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                            @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                        </style>
+                        <div aria-live="polite" role="status"><div>Loading...</div></div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="guarantee">
+                ✔️ Garansi 30 hari uang kembali • ✔️ Pengiriman cepat • ✔️ Pesanan aman
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Daily Mall Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Timer Countdown
+        function updateCountdown() {
+            const now = new Date();
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 999);
+            
+            const difference = endOfDay - now;
+            
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown').textContent = 
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Color Selection
+        const colorOptions = document.querySelectorAll('.color-option');
+        const mainImage = document.getElementById('mainProductImage');
+        
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                colorOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                const newImage = this.getAttribute('data-image');
+                mainImage.src = newImage;
+            });
+        });
+        
+        // Embed Script (from provided code)
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    !function(w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function() {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                };
+            }
+            
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://rara.orderonline.id');
+            ooe('init', '5f12ee789d8e8e5e870172ee', '68b1a17eb56d6692480deb1e', '68b1a17eb56d6692480deb1f', 'oo-embed-form-super-fast-charging-powerbank-7288', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+            
+            if (!window.jQuery) {
+                !function(w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+    </script>
+</body>
+</html>
